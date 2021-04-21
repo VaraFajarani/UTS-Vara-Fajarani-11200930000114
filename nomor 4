@@ -1,0 +1,46 @@
+package BankVara;
+
+/**
+ *
+ * @author acer
+ */
+public class Bank {
+    int saldo, simpanUang, ambilUang;
+    
+    public Bank (){
+        this.saldo=100000;
+        this.simpanUang=500000;
+        this.ambilUang=150000;
+    }
+    
+    public void saldo (int saldo, int simpanUang, int ambilUang){
+        System.out.println("Selamat Datang di Bank Vara");
+        System.out.println("Saldo saat ini : " + "Rp. " + saldo);
+        
+        
+    }
+
+    public void simpanUang(int simpanUang){
+        saldo = saldo=simpanUang;
+        System.out.println("Simpan Uang    : Rp. " + simpanUang);
+        System.out.println("Saldo saat ini : Rp. " + saldo);
+        System.out.println("____________");
+    }
+    public void ambilUang(int ambilUang){
+        saldo = saldo-ambilUang;
+        System.out.println("Ambil uang     : Rp. " + ambilUang);
+        System.out.println("Saldo saat ini : Rp. " + saldo);
+        
+    }
+    
+        
+}
+====================================================================================
+public class BankBeraksi {
+    public static void main(String[] args) {
+        Bank BankVara = new Bank();
+        BankVara.saldo(100000, 500000, 150000);
+        BankVara.simpanUang(500000);
+        BankVara.ambilUang(150000);
+    }
+}
