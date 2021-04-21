@@ -11,14 +11,14 @@ public class Person {
 	}
 }
 ==============================================================
-public class Personberaksi {
+public class Person1 {
 	public static void main(String[] args){
 		Person thisPerson = new Person(“Joe Smith”, 24);
 		thisPerson.info();
 	}
 }
 
-public class Personberaksi {
+public class Person1 {
 	public static void main(String[] args){
 		Person thisPerson = new Person(“Mary Sharp”, 52);
 		thisPerson.info();
